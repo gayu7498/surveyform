@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight:400 ;
+    text-align: center;
+    color: #f5f6f7;
+    background-color: rgba(68, 70, 84, 0.76);
+    background-image: linear-gradient(45deg,
+            #ff6b6b 25%,
+            transparent 25%,
+            transparent 50%,
+            #ffa45b 50%,
+            #ffa45b 75%,
+            transparent 75%,
+            transparent);
+    background-size: cover;
+    background-position: center;
+    background-repeat: norepeat;
+    background-attachment: fixed;
+}
+
+h1 {
+
+    margin-bottom: 1.5rem;
+    text-shadow: -1px 0 black, 2px 0 black, 0 2px black, 0 -1px black;
+    font-size: 2rem;
+
+
+}
+
+
+#description {
+    font-style: italic;
+    margin: 3rem;
+    margin-top: 0;
+
+}
+
+form {
+    background-color: rgba(108, 169, 141, 0.9);
+    width: 50vw;
+    max-width: 750px;
+    min-width: 300px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #fff;
+    padding:auto;
+}
+
+fieldset {
+    margin: 0;
+    border: none;
+    text-align: start;
+}
+
+label {
+    display: block;
+    margin: 1rem;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0;
+    width: 90%;
+    min-height: 2rem;
+    background-color: rgba(68, 70, 84);
+    border: none;
+    border-radius: 0.5rem;
+    color: #a7a7a7;
+    font-weight: 600;
+    padding:5px 10px;
+    font-size: 1rem;
+    
+}
+select{
+    width:95%;
+    padding:10px;
+
+}
+input::placeholder,
+textarea::placeholder {
+    color: #a7a7a7;
+
+}
+
+
+fieldset:last-of-type {
+    margin-top: 2rem;
+    border-top: 2px solid rgb(68, 70, 84);
+    padding-top: 2rem;
+
+}
+
+span {
+    font-size: 1rem;
+    font-weight: thin;
+}
+
+fieldset>div {
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin:auto;
+    height: 3rem;
+    font-size: 100%;
+    background: #ffa45b;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+input[type="submit"]:hover {
+    background: #1b1b32;
+
+}
+
+@media (max-width: 540px) {
+    body{
+        font-size:1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form{
+        width:60vw;
+    } 
+        
+}

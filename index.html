@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form with the required information for Election details.</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label"> Enter Your Name:
+                <input type="text" id="name" name="name-label" placeholder="Enter your Name" required>
+            </label>
+            <label id="email-label"> Enter your Email:
+                <input type="email" id="email" placeholder="Enter your Email" name="email-label" required>
+            </label>
+            <label id="number-label"> Enter your age(years):
+                <input type="number" id="number" name="number-label" placeholder="Age" min="18" max="120">
+            </label>
+            <label>Are you registered for vote?
+                <select id="dropdown">
+                    <option disabled="" selected="" value=""> --Select--
+                    </option>
+                    <option value="yes-dropdown"> YES </option>
+                    <option value="no-dropdown"> NO</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+
+            <div class="evaluate">
+                <p>How do you evaluate political candidate?</p>
+                <label for="1">
+                    <input type="radio" name="evaluate" value="1" class="inline"> Telivision or Internet News
+                </label>
+                <label for="2">
+                    <input type="radio" name="evaluate" value="2" class="inline"> Personal research
+                </label>
+                <label for="3">
+                    <input type="radio" name="evaluate" value="3" class="inline"> Watching debates and live appearances
+                </label>
+                <label for="4">
+                    <input type="radio" name="evaluate" value="4" class="inline"> Other
+                </label>
+            </div>
+            <div class="issue">
+                <p>Which of the following issues are most important to you in this election?<span> (Check all that
+                        apply)</span></p>
+                <label for="Economy">
+                    <input type="checkbox" value="Economy" class="inline">
+                    Economy
+                </label>
+                <label for="Healthcare ">
+                    <input type="checkbox" value="Healthcare " class="inline"> Healthcare
+                </label>
+                <label for="Immigration">
+                    <input type="checkbox" value="Immigration" class="inline"> Immigration
+                </label>
+                <label for="Education">
+                    <input type="checkbox" value="Education" class="inline"> Education
+                </label>
+                <label for="Environment">
+                    <input type="checkbox" value="Environment" class="inline"> Environment
+                </label>
+                <label for="National security">
+                    <input type="checkbox" value="National security" class="inline"> National security
+                </label>
+                <label for="equality">
+                    <input type="checkbox" value="equality" class="inline"> Social justice and equality
+                </label>
+                <label for="Other">
+                    <input type="checkbox" value="Other" class="inline"> Other
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+
+            <label for="opinion">
+                <p>What qualifications do you expect a candidate who you vote for to have?</p>
+                <textarea id="opinion" rows="4" cols="30" placeholder=" write on something..."></textarea>
+            </label>
+            <label for="duty">
+                <input type="checkbox" value="duty" class="inline"> I will fulfill my Duty by casting my Vote
+            </label>
+        </fieldset>
+        <fieldset>
+
+            <input type="submit" id="submit" value="SUBMIT">
+        </fieldset>
+    </form>
+</body>
+
+</html>
