@@ -43,7 +43,7 @@ form {
     max-width: 750px;
     min-width: 300px;
     text-align: center;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0 auto;
     color: #fff;
     padding:auto;
 }
@@ -90,6 +90,7 @@ fieldset:last-of-type {
     margin-top: 2rem;
     border-top: 2px solid rgb(68, 70, 84);
     padding-top: 2rem;
+    margin-bottom:1rem;
 
 }
 
